@@ -1,0 +1,19 @@
+Name of QuantLet: Bitcoin_Basis_Trade
+
+Published in: Digital Finance (submitted) - Institutional Capacity Constraints in Bitcoin's Cash-and-Carry Basis Trade
+
+Description: 'Reproduces every empirical result in the paper. Downloads all inputs at runtime from public sources and estimates the institutional hurdle rate governing the Bitcoin cash-and-carry basis trade. Runs a Hansen (1999b/2000) threshold regression via grid-search SSR minimisation with a bootstrap sup-F test, fits regime and bull/bear OLS models with Newey-West HAC standard errors, decomposes aggregate ETF volume into an institutional basis-trade baseline and a retail directional component, and performs a pre/post spot-ETF-launch subsample robustness check. Regenerates Tables 1-5 and Figures 1-8.'
+
+Keywords: 'Bitcoin, cryptocurrency, cash-and-carry basis trade, institutional adoption, hurdle rate, threshold regression, Hansen, Newey-West, HAC, regime-dependent correlation, ETF volume, market microstructure'
+
+Author: Masaru Kakutani
+
+Submitted: Wednesday, July 01 2026 by Masaru Kakutani
+
+Datafile: 'None required. Data are fetched automatically at runtime from public sources: CFTC Commitment of Traders reports (via the cot_reports package), Bitcoin and S&P 500 prices and Bitcoin spot-ETF volumes (via Yahoo Finance / yfinance), and U.S. Treasury yields (FRED). Sample period 2018-01-01 to 2026-05-17.'
+
+Input: 'No manual data files or API keys. Global settings (sample window, DPI) are defined in the setup cell; DATA_END = 2026-05-17 pins the reproducible end date.'
+
+Output: 'Table 1 (Pearson correlation matrix); Tables 2-3 (regime threshold OLS at the 9.71% hurdle, HAC); Tables 4-5 (bull/bear HAC OLS of ETF volume on hedge-fund shorts); Figures 1-8 saved as 300 dpi PNG, plus two supplementary table-visualisation charts.'
+
+Example: 'Hansen threshold identified at gamma-hat = 9.71%; above this hurdle, positioning does not scale with the yield spread. The basis trade explains 70.7% of ETF-volume variance in bear/sideways regimes versus 28.8% in bull markets.'
