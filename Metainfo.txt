@@ -1,6 +1,6 @@
 Title: Institutional Capacity Constraints in Bitcoin's Cash-and-Carry Basis Trade
 Author: Masaru Kakutani (The Graduate Center, CUNY)
-Status: Under review, The Journal of Futures Markets (submitted July 2026)
+Status: Prepared for submission, The Journal of Futures Markets (submitted July 2026)
 Contents: Python analysis pipeline (Bitcoin_Trade_July_1_with_Vol.ipynb),
           processed datasets, and 300-dpi figure exports (Figs. 1-8).
           The notebook reproduces every result reported in the manuscript,
